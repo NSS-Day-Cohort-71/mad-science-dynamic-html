@@ -46,3 +46,6 @@ export const getInventions = () => {
     return { ...invention }
   })
 }
+
+export const getExperiments = () =>
+  database.experiments.map((experiment) => ({ ...experiment }))
